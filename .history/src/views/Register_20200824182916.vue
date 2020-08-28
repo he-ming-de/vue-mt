@@ -1,0 +1,88 @@
+<template>
+  <div class="container">
+    <div class="item">
+      <div class="d-f j-c-s-b">
+        <div class="d-f">
+          <div>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-meituan" />
+            </svg>
+          </div>
+          <div class="font">美团</div>
+        </div>
+        <div class="d-f a-i-c">
+          <div>已有美团账号？</div>
+          <div class="dl">登录</div>
+        </div>
+      </div>
+      <div>
+        <div class="d-f a-i-c">
+          <div class="fonts">用户名</div>
+          <div class="m-l1">
+            <input type="text" class="input1" />
+          </div>
+        </div>
+        <div class="d-f a-i-c">
+          <div>邮箱</div>
+          <div class="m-l1">
+            <input type="email" class="input1" />
+          </div>
+        </div>
+        <div class="d-f a-i-c">
+          <el-form-item label="密码" prop="pass">
+    <el-input type="password" v-model="ruleForm.pass" autocomplete="off"></el-input>
+  </el-form-item>
+  <el-form-item label="确认密码" prop="checkPass">
+    <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off"></el-input>
+  </el-form-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "",
+  props: {},
+  data() {
+    return {};
+  },
+  components: {},
+  methods: {},
+  mounted() {},
+  watch: {},
+  computed: {},
+};
+</script>
+
+<style scoped lang='scss'>
+.fonts {
+  width: 100px;
+}
+.input1 {
+  height: 26px;
+  width: 240px;
+  outline: none;
+}
+.dl {
+  margin-left: 10px;
+  background: rgb(255, 192, 0);
+  padding: 3px 6px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.icon {
+  width: 40px !important;
+  height: 40px !important;
+}
+.font {
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.item {
+  width: 960px;
+  padding: 20px 0;
+}
+</style>
